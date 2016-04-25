@@ -23,6 +23,7 @@ function largestPalindromeProduct(num) {
 		for (var k = j; k > 99; k--) {
 			if (isPalindrome(j*k) && j*k > max) {
 				max = j*k;
+				break;
 			}
 		}
 	}
