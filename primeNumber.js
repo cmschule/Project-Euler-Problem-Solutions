@@ -14,7 +14,7 @@ function primeNumber(primePosition) {
 			}
 		}
 	}
-	return num;
+	return num[num.length-1];
 }
 
 console.log(primeNumber(10001));
