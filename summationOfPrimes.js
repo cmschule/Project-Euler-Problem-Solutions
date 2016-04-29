@@ -10,8 +10,10 @@ function summationOfPrimes(primeLimit) {
 				if (currentNum%num[i] === 0) {
 					break;
 				}
-				else if (i === num.length-1) {
-					num.push(currentNum)
+				else if (num[i] > Math.sqrt(currentNum)) {
+					num.push(currentNum);
+					count++;
+					break;
 				}
 			}
 		}
