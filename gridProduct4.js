@@ -47,10 +47,12 @@ for (var r = 0; r < 20; r++) {
 }
 for (var R = 0; R < 16; R++) {
 	for (var C = 0; C < 16; C++) {
+		//diagonal top left to bottom right
 		product = gridNum[R][C]*gridNum[R+1][C+1]*gridNum[R+2][C+2]*gridNum[R+3][C+3];
 		if (product>max) {
 			max = product;
 		}
+		//diagonal bottom left to top right
 		product = gridNum[R][C+3]*gridNum[R+1][C+2]*gridNum[R+2][C+1]*gridNum[R+3][C];
 		if (product>max) {
 			max = product;
